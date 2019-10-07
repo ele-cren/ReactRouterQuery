@@ -5,6 +5,8 @@ import styles from './Appartements.module.css'
 import Filters from '../../Components/Filters/Filters'
 
 const Appartements = (props) => {
+    //récupération params url (search & available)
+    //Utilisation des params url à la place de state React
     let params = new URLSearchParams(props.location.search)
     let available = params.get('available') ? parseInt(params.get('available')) : 2
     let search = params.get('search')
@@ -23,6 +25,8 @@ const Appartements = (props) => {
 
     const setCheckbox = (state) => {
         let newAvailable
+        //state : 0 si click sur la première checkbox sinon 1
+        //available : 0 = available only, 1 = not available only, 2 = available + not available
         if (available === 0) {
             newAvailable = state === 0 ? 0 : 2
         } else {
