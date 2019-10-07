@@ -8,6 +8,7 @@ const Appartements = (props) => {
     //récupération params url (search & available)
     //Utilisation des params url à la place de state React
     let params = new URLSearchParams(props.location.search)
+    //Tout afficher par défaut (available + not available)
     let available = params.get('available') ? parseInt(params.get('available')) : 2
     let search = params.get('search')
 
@@ -19,6 +20,7 @@ const Appartements = (props) => {
     })
 
     const setSearch = (event) => {
+        //modification param url search
         params.set('search', event.target.value)
         props.history.push('?' + params)
     }
@@ -32,6 +34,7 @@ const Appartements = (props) => {
         } else {
             newAvailable = available === 1 ? (state === 0 ? 2 : 1) : (newAvailable = state === 0 ? 1 : 0)
         }
+        //modification param url available
         params.set('available', newAvailable)
         props.history.push('?' + params)
     }
