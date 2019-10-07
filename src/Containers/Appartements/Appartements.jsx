@@ -23,19 +23,10 @@ const Appartements = (props) => {
 
     const setCheckbox = (state) => {
         let newAvailable
-        switch (available) {
-            case 0:
-                newAvailable = state === 0 ? 0 : 2
-                break
-            case 1:
-                newAvailable = state === 0 ? 2 : 1
-                break
-            case 2:
-                newAvailable = state === 0 ? 1 : 0
-                break
-            default:
-                newAvailable = available
-                break
+        if (available === 0) {
+            newAvailable = state === 0 ? 0 : 2
+        } else {
+            newAvailable = available === 1 ? (state === 0 ? 2 : 1) : (newAvailable = state === 0 ? 1 : 0)
         }
         params.set('available', newAvailable)
         props.history.push('?' + params)
