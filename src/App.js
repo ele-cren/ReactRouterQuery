@@ -5,7 +5,7 @@ import { UserProvider } from './Contexts/UserContext'
 
 function App() {
   return (
-    <UserProvider value={ { name: "Erw" } }>
+    <UserProvider value={ { name: "Erwan" } }>
       <Router>
         <Route exact path="/" component={ Appartements } />
         <Route path="/appartement/:id" />
