@@ -1,26 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Appartements from './Containers/Appartements/Appartements'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { UserProvider } from './Contexts/UserContext'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <UserProvider value={ { name: "Erwan" } }>
+      <Router>
+        <Route exact path="/" component={ Appartements } />
+        <Route path="/appartement/:id" />
+      </Router>
+    </UserProvider>
+  )
 }
 
 export default App;

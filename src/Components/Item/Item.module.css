@@ -1,0 +1,30 @@
+.itemContainer {
+    border: 1px solid black;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+.available {
+    background-color: #d9ffe5;
+}
+
+.notAvailable {
+    background-color: #ffd1db;
+}
+
+p {
+    text-align: center;
+    margin: 5px;
+}
+
+.date {
+    font-style: italic;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
