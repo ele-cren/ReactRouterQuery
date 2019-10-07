@@ -2,53 +2,44 @@
     "apparts": [
         {
             "title": "Appartement Paris",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ullamcorper interdum.",
-            "id": 1
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ullamcorper interdum."
         },
         {
             "title": "Appartement Lyon",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ullamcorper interdum.",
-            "date": 1570968000,
-            "id": 2
+            "date": 1570968000
         },
         {
             "title": "Appartement Lille",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ullamcorper interdum.",
-            "id": 3
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ullamcorper interdum."
         },
         {
             "title": "Appartement Marseille",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ullamcorper interdum.",
-            "date": 1571400000,
-            "id": 4
+            "date": 1571400000
         },
         {
             "title": "Appartement Strasbourg",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ullamcorper interdum.",
-            "id": 5
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ullamcorper interdum."
         },
         {
             "title": "Appartement Brest",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ullamcorper interdum.",
-            "date": 1571832000,
-            "id": 6
+            "date": 1571832000
         },
         {
             "title": "Appartement Montpellier",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ullamcorper interdum.",
-            "id": 7
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ullamcorper interdum."
         },
         {
             "title": "Appartement Nice",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ullamcorper interdum.",
-            "date": 1572436800,
-            "id": 8
+            "date": 1572436800
         },
         {
             "title": "Appartement Paris 2",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ullamcorper interdum.",
-            "date": 1570881600,
-            "id": 9
+            "date": 1570881600
         }
     ]
 }
